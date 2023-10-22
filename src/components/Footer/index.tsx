@@ -10,7 +10,7 @@ const Footer = () => {
           {socials.map(({ link, follow, icon }: TSocial) => (
             <div
               key={randomUUID()}
-              className='cursor-pointer py-2 hover:text-accent md:p-4'
+              className='cursor-pointer py-2 hover:text-primary md:p-4'
             >
               <Link
                 href={link}
@@ -28,7 +28,7 @@ const Footer = () => {
             Made with Love{' '}
             <Link
               href='https://www.jacobc.co.za'
-              className='text-accent'
+              className='text-primary'
               aria-label='Contact with sithembe Transportation and projects'
             >
               Jacob Chademwiri

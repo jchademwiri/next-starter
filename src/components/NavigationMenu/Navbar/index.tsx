@@ -34,14 +34,14 @@ const Navbar = () => {
         style={{ backgroundColor: `${navBg}` }}
         className={
           shadow
-            ? 'fixed top-0 z-[100] h-20 w-full    shadow-sm shadow-primary/80'
+            ? 'fixed top-0 z-[100] h-20 w-full shadow-sm shadow-primary/80'
             : 'fixed top-0 z-[100] h-20 w-full bg-transparent'
         }
       >
         <div className='mx-auto flex h-full w-11/12  items-center justify-between px-2 lg:max-w-[1240px] '>
           <h1 className='text-xl lg:text-2xl'>
             <Link href='/'>
-              Jacob <span className='text-accent'>Web</span> Developer
+              Jacob <span className='text-primary'>Web</span> Developer
             </Link>
           </h1>
           <div>
@@ -80,7 +80,9 @@ const Navbar = () => {
         <div
           // onClick={() => setNav(false)}
           className={
-            nav ? 'fixed left-0 top-0 h-screen w-full bg-body/70 md:hidden' : ''
+            nav
+              ? 'fixed left-0 top-0 h-screen w-full bg-background/95 md:hidden'
+              : ''
           }
         >
           <div
@@ -94,12 +96,12 @@ const Navbar = () => {
               <div className='flex items-center justify-between w-full'>
                 <h1 className='text-base lg:text-2xl'>
                   <Link href='/'>
-                    Jacob <span className='text-accent'>Web</span> Developer
+                    Jacob <span className='text-primary'>Web</span> Developer
                   </Link>
                 </h1>
                 <div
                   onClick={handleNav}
-                  className='p-3 m-3 rounded-full shadow-md cursor-pointer bg-primary/50 '
+                  className='p-3 m-3 rounded-full shadow-md cursor-pointer bg-primary/50'
                 >
                   <AiOutlineClose />
                 </div>
@@ -123,18 +125,18 @@ const Navbar = () => {
                 ))}
               </ul>
               <div className='pt-40'>
-                <p className='tracking-widest uppercase text-accent'>
+                <p className='tracking-widest uppercase text-primary'>
                   Let&apos;s Connect
                 </p>
 
-                <div className='my-4 flex w-full items-center justify-between  sm:w-[80%]'>
+                <div className='my-4 flex w-full justify-between  sm:w-[80%]'>
                   {icons.map((icon, index) => (
                     <Link
                       href={icon.link}
                       target='_blank'
                       rel='noreferrer'
                       key={index}
-                      className='p-4 duration-300 ease-in rounded-full bg-primary/50 hover:scale-110 sm:p-6'
+                      className='p-2 duration-300 ease-in rounded-full bg-primary/50 hover:scale-110 sm:p-4'
                     >
                       {icon.icon}
                     </Link>
