@@ -9,8 +9,8 @@ import Nav from '@/components/NavigationMenu/Nav';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Chichikgadi Official Website',
-  description: 'Chichikgadi Official Website',
+  title: 'Official Website',
+  description: 'Official Website',
 };
 
 export default function RootLayout({
@@ -19,11 +19,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
+          attribute="class"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
