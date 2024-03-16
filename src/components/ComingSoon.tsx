@@ -11,7 +11,7 @@ const ComingSoon = () => {
           SITE NEARLY READY
         </p>
         <div className="my-2 h-2 w-full rounded-full bg-accent">
-          <div className="h-2 w-1/2 rounded-full bg-primary"></div>
+          <div className="h-2 w-1/4 rounded-full bg-primary"></div>
         </div>
         <h2 className="py-2 text-xl font-semibold md:text-3xl">
           Contact us Now
