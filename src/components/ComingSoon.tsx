@@ -17,14 +17,14 @@ const ComingSoon = () => {
           Contact us Now
         </h2>
         <div className="grid py-2 md:grid-cols-2 md:py-4">
-          <Link className="py-1 hover:text-primary" href="tel:+27796787198">
-            +27 (0)79 678 7198
+          <Link className="py-1 hover:text-primary" href="tel:+27740491433">
+            +27 (0)74 0491433
           </Link>
           <Link
             className="py-1 hover:text-primary"
-            href="mailto:info@chichikgadi.co.za"
+            href="mailto:info@playhousemedia.net"
           >
-            info@chichikgadi.co.za
+            info@playhousemedia.net
           </Link>
         </div>
       </div>
