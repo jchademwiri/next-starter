@@ -5,7 +5,7 @@ const ComingSoon = () => {
     <section className="mx-10 grid h-screen place-items-center text-center ">
       <div>
         <h1 className="py-6 text-4xl font-bold md:text-7xl">
-          UNDER <br /> CONSTRUCTION
+          SITE UNDER <br /> CONSTRUCTION
         </h1>
         <p className="py-2 text-2xl font-thin tracking-wider  md:py-4 md:text-4xl">
           SITE NEARLY READY
