@@ -1,1 +1,1 @@
-## Getting Started with chichikgadi-official-website
+## Getting Started with nextjs website
