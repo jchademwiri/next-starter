@@ -1,6 +1,8 @@
 import { BsGoogle, BsWhatsapp } from 'react-icons/bs';
 import { GrLinkedinOption } from 'react-icons/gr';
 
+import type { JSX } from "react";
+
 export type TSocial = {
   name: string;
   follow?: string;

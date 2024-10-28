@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     // main nav
-    <>
+    (<>
       <nav
         style={{ backgroundColor: `${navBg}` }}
         className={
@@ -147,7 +147,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </>)
   );
 };
 
