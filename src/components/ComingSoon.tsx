@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const ComingSoon = () => {
   return (
@@ -30,7 +30,7 @@ const ComingSoon = () => {
       </div>
       <footer className="my-10 py-5 md:my-5">
         <p>
-          © Developed by{' '}
+          © Developed by{" "}
           <Link
             rel="noreferrer"
             target="_blank"
