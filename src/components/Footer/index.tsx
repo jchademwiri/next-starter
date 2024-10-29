@@ -1,6 +1,8 @@
-import Link from "next/link"
-import { socials, TSocial } from "./data"
-import { randomUUID } from "crypto"
+import Link from "next/link";
+
+import { randomUUID } from "crypto";
+
+import { TSocial, socials } from "./data";
 
 const Footer = () => {
   return (
@@ -42,6 +44,6 @@ const Footer = () => {
         </div>
       </article>
     </footer>
-  )
-}
-export default Footer
+  );
+};
+export default Footer;

@@ -1,4 +1,14 @@
-'use client';
+"use client";
+
+import Link from "next/link";
+
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+} from "@radix-ui/react-navigation-menu";
+import { Facebook, Linkedin, MenuIcon, Twitter } from "lucide-react";
 
 import {
   Sheet,
@@ -8,23 +18,16 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@/components/ui/sheet';
-import { Button } from '../ui/button';
-import { Facebook, Linkedin, MenuIcon, Twitter } from 'lucide-react';
-import {
-  NavigationMenu,
-  NavigationMenuList,
-  NavigationMenuItem,
-  NavigationMenuLink,
-} from '@radix-ui/react-navigation-menu';
-import { links } from './links';
-import Link from 'next/link';
+} from "@/components/ui/sheet";
+
+import { Button } from "../ui/button";
+import { links } from "./links";
 
 export function MobileMenu() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant='ghost' size={'icon'}>
+        <Button variant="ghost" size={"icon"}>
           <MenuIcon />
         </Button>
       </SheetTrigger>
@@ -36,11 +39,11 @@ export function MobileMenu() {
 
         <NavigationMenu>
           <NavigationMenuList>
-            <NavigationMenuItem className='my-4'>
+            <NavigationMenuItem className="my-4">
               {links.map((link) => (
                 <div key={link.href}>
-                  <Link href={link.href} legacyBehavior passHref >
-                    <NavigationMenuLink className='grid gap-2 rounded-sm p-2 hover:bg-accent'>
+                  <Link href={link.href} legacyBehavior passHref>
+                    <NavigationMenuLink className="grid gap-2 rounded-sm p-2 hover:bg-accent">
                       {link.title}
                     </NavigationMenuLink>
                   </Link>
@@ -49,19 +52,19 @@ export function MobileMenu() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <SheetFooter className='flex-row sm:justify-start gap-2'>
-          <Button size={'icon'} variant={'outline'}>
-            <Link href='/' className='p-2'>
+        <SheetFooter className="flex-row sm:justify-start gap-2">
+          <Button size={"icon"} variant={"outline"}>
+            <Link href="/" className="p-2">
               <Facebook />
             </Link>
           </Button>
-          <Button size={'icon'} variant={'outline'}>
-            <Link href='/' className='p-2'>
+          <Button size={"icon"} variant={"outline"}>
+            <Link href="/" className="p-2">
               <Twitter />
             </Link>
           </Button>
-          <Button size={'icon'} variant={'outline'}>
-            <Link href='/' className='p-2'>
+          <Button size={"icon"} variant={"outline"}>
+            <Link href="/" className="p-2">
               <Linkedin />
             </Link>
           </Button>
